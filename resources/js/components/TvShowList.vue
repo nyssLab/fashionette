@@ -5,8 +5,8 @@
                 <router-link :to="{ name: 'item', params: { id: tvShow.id }}">
                     <div class="row">
                         <div class="col-md-3 col-lg-2">
-                            <img v-if="tvShow.image" :src="tvShow.image.medium" :alt="tvShow.name"  class="img-fluid">
-                            <img v-else src="img/not-found.png" alt="image not found"  class="img-fluid">
+                            <img v-if="tvShow.image" :src="tvShow.image.medium" :alt="tvShow.name" class="img-fluid">
+                            <img v-else src="/img/not-found.png" alt="image not found" class="img-fluid">
                         </div>
                         <div class="col-md-9 col-lg-10 p-5">
                             <h2>{{ tvShow.name }}</h2>

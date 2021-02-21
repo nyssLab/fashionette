@@ -95,7 +95,7 @@
             this.handleScroll()
         },
         watch: {
-            url: function() {
+            url: function () {
                 this.tvShows = []
                 this.loadTvShows()
             }

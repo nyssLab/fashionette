@@ -11,7 +11,7 @@
                                         <div class="header-info-left d-flex align-items-center w-100">
                                             <div class="logo w-100">
                                                 <router-link :to="{ name: 'home' }">
-                                                    <img src="img/logo.svg" alt="Fashionette">
+                                                    <img src="/img/logo.svg" alt="Fashionette">
                                                 </router-link>
                                             </div>
                                             <form action="#" class="form-box w-100" v-on:submit="searchTvShows()"

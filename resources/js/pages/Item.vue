@@ -2,7 +2,7 @@
     <div class="row" v-if="tvShow">
         <div class="col-md-6">
             <img v-if="tvShow.image" :src="tvShow.image.original" :alt="tvShow.name" class="img-fluid">
-            <img v-else src="img/not-found.png" alt="image not found" class="img-fluid">
+            <img v-else src="/img/not-found.png" alt="image not found" class="img-fluid">
         </div>
         <div class="col-md-6">
             <h1>{{ tvShow.name }}</h1>
@@ -23,7 +23,7 @@
 
 <script>
     import axios from 'axios'
-    import { API_BASE_URL } from '../config'
+    import {API_BASE_URL} from '../config'
 
     export default {
         data() {
@@ -31,12 +31,13 @@
                 tvShow: null,
             }
         },
-        created () {
+        created() {
             axios.get(API_BASE_URL + '/shows/' + this.$route.params.id)
                 .then(response => {
                     this.tvShow = response.data
                 })
-                .catch(error => {});
+                .catch(error => {
+                });
         }
     }
 </script>

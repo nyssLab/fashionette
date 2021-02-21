@@ -70,15 +70,6 @@
             reprehenderit, sunt vel vero voluptatum. Consectetur dignissimos maxime perspiciatis possimus quod
             reprehenderit, suscipit. Aliquam amet architecto atque beatae corporis cupiditate deleniti dolore, enim
             molestias optio reiciendis rerum ut voluptates.</p>
-        <p> Alias aperiam, blanditiis cum cupiditate deserunt dolor dolore eius est eum exercitationem fuga laboriosam
-            molestias nihil numquam odio omnis optio pariatur possimus quidem recusandae tempora temporibus ut voluptas.
-            Ab adipisci alias aut commodi dicta dolore eos impedit ipsa ipsum laborum molestias nam nisi non nostrum
-            numquam placeat quam, quas quasi qui rem repellendus saepe sapiente sint sunt velit veniam voluptatem! Ab
-            accusantium aliquid architecto cum deserunt distinctio dolore ducimus eaque est et explicabo fuga fugiat
-            incidunt inventore ipsam iste mollitia natus neque, nesciunt nobis numquam obcaecati omnis praesentium
-            quaerat quasi quia, quibusdam quisquam quo reprehenderit rerum sed sequi totam vitae! Aut delectus iste
-            molestias perspiciatis tempore voluptates.
-        </p>
     </div>
 </template>
 

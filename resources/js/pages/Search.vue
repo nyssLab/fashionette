@@ -16,10 +16,10 @@
                 urlQuery: '',
             }
         },
-        created () {
+        created() {
             this.urlQuery = this.$route.query.q
         },
-        beforeRouteUpdate (to, from, next) {
+        beforeRouteUpdate(to, from, next) {
             this.urlQuery = to.query.q
             next()
         },
