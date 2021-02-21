@@ -35,7 +35,7 @@ class TvShowController extends Controller {
      */
     public function show($id) {
         return $this->tvShowRepository->mazeRequest(
-            $this->tvShow->findById($id),
+            $this->tvShowRepository->findById($id),
             "shows.{$id}"
         );
     }

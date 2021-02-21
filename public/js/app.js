@@ -2417,6 +2417,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -22097,10 +22098,15 @@ var render = function() {
   return _vm.tvShow
     ? _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-6" }, [
-          _c("img", {
-            staticClass: "img-fluid",
-            attrs: { src: _vm.tvShow.image.original, alt: _vm.tvShow.name }
-          })
+          _vm.tvShow.image
+            ? _c("img", {
+                staticClass: "img-fluid",
+                attrs: { src: _vm.tvShow.image.original, alt: _vm.tvShow.name }
+              })
+            : _c("img", {
+                staticClass: "img-fluid",
+                attrs: { src: "img/not-found.png", alt: "image not found" }
+              })
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-6" }, [

@@ -1,7 +1,8 @@
 <template>
     <div class="row" v-if="tvShow">
         <div class="col-md-6">
-            <img :src="tvShow.image.original" :alt="tvShow.name" class="img-fluid">
+            <img v-if="tvShow.image" :src="tvShow.image.original" :alt="tvShow.name" class="img-fluid">
+            <img v-else src="img/not-found.png" alt="image not found" class="img-fluid">
         </div>
         <div class="col-md-6">
             <h1>{{ tvShow.name }}</h1>
