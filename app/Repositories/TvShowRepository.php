@@ -16,7 +16,7 @@ class TvShowRepository implements TvShowRepositoryInterface {
 
     public function __construct(Client $client) {
         $this->client = $client;
-        $this->itemsPerPage = 16;
+        $this->itemsPerPage = setting('site.items_per_page') ?? 16;
     }
 
     /**
