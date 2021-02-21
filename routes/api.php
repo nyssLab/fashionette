@@ -28,6 +28,12 @@ Route::group(['prefix' => 'shows', 'middleware' => 'api'], function () {
     Route::get(
         '{id}',
         [\App\Http\Controllers\TvShowController::class, 'show']
-    )->name('show')->where(['id' => '[0-9]+']);;
+    )->name('show')->where(['id' => '[0-9]+']);
 
+});
+
+Route::group(['middleware' => 'api'], function () {
+    Route::any('{any}', function () {
+        abort(404);
+    });
 });
