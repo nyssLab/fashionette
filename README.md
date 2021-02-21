@@ -16,7 +16,6 @@
 
 - Laravel Voyager
 - Unit tests
-- PHP 7.4
 
 ## Best practice used
 
