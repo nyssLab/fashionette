@@ -14,18 +14,6 @@ class TvShow extends Model {
         $this->client = $client;
     }
 
-    public function loadAll() {
-        return $this->response_handler($this->endpointRequest('shows?page=0'));
-    }
-
-    public function findById($id) {
-        return $this->endpointRequest('shows/' . $id);
-    }
-
-    public function search($keyWord) {
-        return $this->response_handler($this->endpointRequest('search/shows?q=' . $keyWord));
-    }
-
     public function endpointRequest($url) {
         try {
             $response = $this->client->request('GET', $url);

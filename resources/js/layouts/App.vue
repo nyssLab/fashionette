@@ -114,11 +114,6 @@
                 searchResult: []
             };
         },
-        watch: {
-            $route() {
-                $("#navbarCollapse").collapse("hide");
-            },
-        },
         methods: {
             searchTvShows() {
                 router.push({path: 'search', query: {q: this.query}})

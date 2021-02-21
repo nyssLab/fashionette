@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\TvShow;
 use App\Repositories\TvShowRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 
 class TvShowController extends Controller {
 
@@ -46,7 +47,10 @@ class TvShowController extends Controller {
      * @return mixed
      */
     public function search(Request $request) {
-        return $this->_filterSearch($this->tvShow->search($request->q), $request->q);
+        return $this->_filterSearch(
+            $this->tvShowRepository->search($request->q),
+            $request->q
+        );
     }
 
     /**
@@ -56,14 +60,12 @@ class TvShowController extends Controller {
      * @param $keyWord
      * @return mixed
      */
-    private function _filterSearch($searchResult, $keyWord) {
-        return array_map(
-            function ($item) {
-                return $item->show;
-            },
-            array_filter($searchResult, function ($item) use ($keyWord) {
+    private function _filterSearch(Collection $searchResult, $keyWord) {
+        return $searchResult
+            ->filter(function ($item) use ($keyWord) {
                 return stripos($item->show->name, $keyWord) !== false;
-            })
-        );
+            })->map(function ($item) {
+                return $item->show;
+            });
     }
 }

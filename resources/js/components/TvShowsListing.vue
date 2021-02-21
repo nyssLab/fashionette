@@ -82,17 +82,23 @@
             },
             async loadTvShows() {
                 this.isLoading = true
-                const response = await axios.get(API_BASE_URL + '/' + this.url + '?lastId=' + this.lastId)
-                if (response.data[response.data.length - 1].id !== this.lastId) {
+                const response = await axios.get(API_BASE_URL + '/' + this.url + 'lastId=' + this.lastId)
+                if (response.data.length > 0 && response.data[response.data.length - 1].id !== this.lastId) {
                     this.tvShows = this.tvShows.concat(response.data)
+                    this.lastId = this.tvShows[this.tvShows.length - 1].id
                 }
-                this.lastId = this.tvShows[this.tvShows.length - 1].id
                 this.isLoading = false
 
             },
         },
         mounted() {
             this.handleScroll()
+        },
+        watch: {
+            url: function() {
+                this.tvShows = []
+                this.loadTvShows()
+            }
         }
     }
 </script>

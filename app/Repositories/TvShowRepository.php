@@ -66,6 +66,16 @@ class TvShowRepository implements TvShowRepositoryInterface {
         );
     }
 
+    public function findById($id) {
+        return $this->endpointRequest('shows/' . $id);
+    }
+
+    public function search($keyWord) {
+        return collect(
+            $this->response_handler($this->endpointRequest('search/shows?q=' . $keyWord))
+        );
+    }
+
     /**
      * Get Request's content
      *

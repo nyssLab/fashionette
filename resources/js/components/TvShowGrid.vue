@@ -4,7 +4,8 @@
             <div class="properties-card">
                 <router-link :to="{ name: 'item', params: { id: tvShow.id }}">
                     <div class="properties-img">
-                        <img :src="tvShow.image.medium" :alt="tvShow.name">
+                        <img v-if="tvShow.image" :src="tvShow.image.medium" :alt="tvShow.name">
+                        <img v-else src="img/not-found.png" alt="image not found">
                     </div>
                     <div class="properties-caption properties-caption2">
                         <h3>{{ tvShow.name }}</h3>

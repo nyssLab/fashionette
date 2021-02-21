@@ -1,6 +1,6 @@
 <template>
     <TvShowsListing
-        url="shows"
+        url="shows?"
     ></TvShowsListing>
 </template>
 
