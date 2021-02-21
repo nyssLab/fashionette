@@ -14,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'shows', 'middleware' => 'api'], function () {
+    Route::get(
+        '/',
+        [\App\Http\Controllers\TvShowController::class, 'index']
+    )->name('index');
+
+    Route::get(
+        'search',
+        [\App\Http\Controllers\TvShowController::class, 'search']
+    )->name('search');
+
+    Route::get(
+        '{id}',
+        [\App\Http\Controllers\TvShowController::class, 'show']
+    )->name('show')->where(['id' => '[0-9]+']);;
+
 });
