@@ -25,14 +25,15 @@
 - Cached API requests for better performance
 - Custom artisan console commands
 - Commented out code
-- Light and maintainable classes
+- Lightweight and maintainable classes
 - Laravel Seeders
 
 ## Other Stuff
 
 - Index and Show API routes are cached for 1 min (configurable)
 - Number of items per page is configurable via backoffice at /admin
-     - use email/password _**admin@fashionette.test**_ / _**secret**_ to login
+    - i.e. TVMaze API has a pagination of 250 per page, now fully customizable
+- use _**admin@fashionette.test**_ / _**secret**_ to login to /admin
 - Added 404 page for front end
 
 ## Steps to install
