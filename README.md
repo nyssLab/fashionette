@@ -58,8 +58,7 @@
 - Clone project
 - `npm install`
 - `composer install`
-- Create and .env file from .env.example and configure Database parameters in it
-- `php artisan key:generate`
+- Configure Database parameters in .env file
 - `php artisan project:install`
 
 
