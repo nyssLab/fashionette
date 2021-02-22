@@ -108,7 +108,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: assumenda
+                example: odit
                 required: true
                 schema:
                     type: string
@@ -165,7 +165,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: repellendus
+                example: quod
                 required: true
                 schema:
                     type: string
@@ -300,7 +300,7 @@ paths:
                 in: path
                 name: key
                 description: ''
-                example: non
+                example: labore
                 required: true
                 schema:
                     type: string
@@ -317,7 +317,7 @@ paths:
                         value: ''
                     present:
                         summary: 'When the value is present'
-                        value: facere
+                        value: omnis
     /arrilot/load-widget:
         get:
             summary: 'The action to show widget output via ajax.'
@@ -419,7 +419,7 @@ paths:
                 in: path
                 name: any
                 description: ''
-                example: repudiandae
+                example: nisi
                 required: true
                 schema:
                     type: string
@@ -456,7 +456,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"robots\" content=\"none\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui\">\n    <meta name=\"description\" content=\"admin login\">\n    <title>Admin - Voyager</title>\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/admin/voyager-assets?path=css%2Fapp.css\">\n        <style>\n        body {\n            background-image:url('http://fashionette.test/admin/voyager-assets?path=images%2Fbg.jpg');\n            background-color: #FFFFFF;\n        }\n        body.login .login-sidebar {\n            border-top:5px solid #22A7F0;\n        }\n        @media (max-width: 767px) {\n            body.login .login-sidebar {\n                border-top:0px !important;\n                border-left:5px solid #22A7F0;\n            }\n        }\n        body.login .form-group-default.focused{\n            border-color:#22A7F0;\n        }\n        .login-button, .bar:before, .bar:after{\n            background:#22A7F0;\n        }\n        .remember-me-text{\n            padding:0 5px;\n        }\n    </style>\n    \n        <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\">\n</head>\n<body class=\"login\">\n<div class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"faded-bg animated\"></div>\n        <div class=\"hidden-xs col-sm-7 col-md-8\">\n            <div class=\"clearfix\">\n                <div class=\"col-sm-12 col-md-10 col-md-offset-2\">\n                    <div class=\"logo-title-container\">\n                                                                            <img class=\"img-responsive pull-left flip logo hidden-xs animated fadeIn\" src=\"http://fashionette.test/admin/voyager-assets?path=images%2Flogo-icon-light.png\" alt=\"Logo Icon\">\n                                                <div class=\"copy animated fadeIn\">\n                            <h1>Voyager</h1>\n                            <p>Welcome to Voyager. The Missing Admin for Laravel</p>\n                        </div>\n                    </div> <!-- .logo-title-container -->\n                </div>\n            </div>\n        </div>\n\n        <div class=\"col-xs-12 col-sm-5 col-md-4 login-sidebar\">\n\n               <div class=\"login-container\">\n\n        <p>Sign In Below:</p>\n\n        <form action=\"http://fashionette.test/admin/login\" method=\"POST\">\n            <input type=\"hidden\" name=\"_token\" value=\"uuaxhJwuJ8ZJmDBvbpMhl5y7Shw8HWykbmBLvmtb\">\n            <div class=\"form-group form-group-default\" id=\"emailGroup\">\n                <label>E-mail</label>\n                <div class=\"controls\">\n                    <input type=\"text\" name=\"email\" id=\"email\" value=\"\" placeholder=\"E-mail\" class=\"form-control\" required>\n                </div>\n            </div>\n\n            <div class=\"form-group form-group-default\" id=\"passwordGroup\">\n                <label>Password</label>\n                <div class=\"controls\">\n                    <input type=\"password\" name=\"password\" placeholder=\"Password\" class=\"form-control\" required>\n                </div>\n            </div>\n\n            <div class=\"form-group\" id=\"rememberMeGroup\">\n                <div class=\"controls\">\n                    <input type=\"checkbox\" name=\"remember\" id=\"remember\" value=\"1\"><label for=\"remember\" class=\"remember-me-text\">Remember me</label>\n                </div>\n            </div>\n\n            <button type=\"submit\" class=\"btn btn-block login-button\">\n                <span class=\"signingin hidden\"><span class=\"voyager-refresh\"></span> Logging in...</span>\n                <span class=\"signin\">Login</span>\n            </button>\n\n        </form>\n\n        <div style=\"clear:both\"></div>\n\n        \n    </div> <!-- .login-container -->\n\n        </div> <!-- .login-sidebar -->\n    </div> <!-- .row -->\n</div> <!-- .container-fluid -->\n\n    <script>\n        var btn = document.querySelector('button[type=\"submit\"]');\n        var form = document.forms[0];\n        var email = document.querySelector('[name=\"email\"]');\n        var password = document.querySelector('[name=\"password\"]');\n        btn.addEventListener('click', function(ev){\n            if (form.checkValidity()) {\n                btn.querySelector('.signingin').className = 'signingin';\n                btn.querySelector('.signin').className = 'signin hidden';\n            } else {\n                ev.preventDefault();\n            }\n        });\n        email.focus();\n        document.getElementById('emailGroup').classList.add(\"focused\");\n\n        // Focus events for email and password fields\n        email.addEventListener('focusin', function(e){\n            document.getElementById('emailGroup').classList.add(\"focused\");\n        });\n        email.addEventListener('focusout', function(e){\n            document.getElementById('emailGroup').classList.remove(\"focused\");\n        });\n\n        password.addEventListener('focusin', function(e){\n            document.getElementById('passwordGroup').classList.add(\"focused\");\n        });\n        password.addEventListener('focusout', function(e){\n            document.getElementById('passwordGroup').classList.remove(\"focused\");\n        });\n\n    </script>\n</body>\n</html>\n"
+                                example: "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"robots\" content=\"none\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui\">\n    <meta name=\"description\" content=\"admin login\">\n    <title>Admin - Voyager</title>\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/admin/voyager-assets?path=css%2Fapp.css\">\n        <style>\n        body {\n            background-image:url('http://fashionette.test/admin/voyager-assets?path=images%2Fbg.jpg');\n            background-color: #FFFFFF;\n        }\n        body.login .login-sidebar {\n            border-top:5px solid #22A7F0;\n        }\n        @media (max-width: 767px) {\n            body.login .login-sidebar {\n                border-top:0px !important;\n                border-left:5px solid #22A7F0;\n            }\n        }\n        body.login .form-group-default.focused{\n            border-color:#22A7F0;\n        }\n        .login-button, .bar:before, .bar:after{\n            background:#22A7F0;\n        }\n        .remember-me-text{\n            padding:0 5px;\n        }\n    </style>\n    \n        <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\">\n</head>\n<body class=\"login\">\n<div class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"faded-bg animated\"></div>\n        <div class=\"hidden-xs col-sm-7 col-md-8\">\n            <div class=\"clearfix\">\n                <div class=\"col-sm-12 col-md-10 col-md-offset-2\">\n                    <div class=\"logo-title-container\">\n                                                                            <img class=\"img-responsive pull-left flip logo hidden-xs animated fadeIn\" src=\"http://fashionette.test/admin/voyager-assets?path=images%2Flogo-icon-light.png\" alt=\"Logo Icon\">\n                                                <div class=\"copy animated fadeIn\">\n                            <h1>Voyager</h1>\n                            <p>Welcome to Voyager. The Missing Admin for Laravel</p>\n                        </div>\n                    </div> <!-- .logo-title-container -->\n                </div>\n            </div>\n        </div>\n\n        <div class=\"col-xs-12 col-sm-5 col-md-4 login-sidebar\">\n\n               <div class=\"login-container\">\n\n        <p>Sign In Below:</p>\n\n        <form action=\"http://fashionette.test/admin/login\" method=\"POST\">\n            <input type=\"hidden\" name=\"_token\" value=\"6LXl4u9fygYb6jmoHsckV3LLMt4Oe18WRmoPAwpi\">\n            <div class=\"form-group form-group-default\" id=\"emailGroup\">\n                <label>E-mail</label>\n                <div class=\"controls\">\n                    <input type=\"text\" name=\"email\" id=\"email\" value=\"\" placeholder=\"E-mail\" class=\"form-control\" required>\n                </div>\n            </div>\n\n            <div class=\"form-group form-group-default\" id=\"passwordGroup\">\n                <label>Password</label>\n                <div class=\"controls\">\n                    <input type=\"password\" name=\"password\" placeholder=\"Password\" class=\"form-control\" required>\n                </div>\n            </div>\n\n            <div class=\"form-group\" id=\"rememberMeGroup\">\n                <div class=\"controls\">\n                    <input type=\"checkbox\" name=\"remember\" id=\"remember\" value=\"1\"><label for=\"remember\" class=\"remember-me-text\">Remember me</label>\n                </div>\n            </div>\n\n            <button type=\"submit\" class=\"btn btn-block login-button\">\n                <span class=\"signingin hidden\"><span class=\"voyager-refresh\"></span> Logging in...</span>\n                <span class=\"signin\">Login</span>\n            </button>\n\n        </form>\n\n        <div style=\"clear:both\"></div>\n\n        \n    </div> <!-- .login-container -->\n\n        </div> <!-- .login-sidebar -->\n    </div> <!-- .row -->\n</div> <!-- .container-fluid -->\n\n    <script>\n        var btn = document.querySelector('button[type=\"submit\"]');\n        var form = document.forms[0];\n        var email = document.querySelector('[name=\"email\"]');\n        var password = document.querySelector('[name=\"password\"]');\n        btn.addEventListener('click', function(ev){\n            if (form.checkValidity()) {\n                btn.querySelector('.signingin').className = 'signingin';\n                btn.querySelector('.signin').className = 'signin hidden';\n            } else {\n                ev.preventDefault();\n            }\n        });\n        email.focus();\n        document.getElementById('emailGroup').classList.add(\"focused\");\n\n        // Focus events for email and password fields\n        email.addEventListener('focusin', function(e){\n            document.getElementById('emailGroup').classList.add(\"focused\");\n        });\n        email.addEventListener('focusout', function(e){\n            document.getElementById('emailGroup').classList.remove(\"focused\");\n        });\n\n        password.addEventListener('focusin', function(e){\n            document.getElementById('passwordGroup').classList.add(\"focused\");\n        });\n        password.addEventListener('focusout', function(e){\n            document.getElementById('passwordGroup').classList.remove(\"focused\");\n        });\n\n    </script>\n</body>\n</html>\n"
             tags:
                 - Endpoints
             security: []
@@ -597,7 +597,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: laudantium
+                example: explicabo
                 required: true
                 schema:
                     type: string
@@ -643,7 +643,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: et
+                example: nemo
                 required: true
                 schema:
                     type: string
@@ -689,7 +689,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: ut
+                example: dolores
                 required: true
                 schema:
                     type: string
@@ -728,7 +728,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: mollitia
+                example: rem
                 required: true
                 schema:
                     type: string
@@ -866,6 +866,1392 @@ paths:
             tags:
                 - Endpoints
             security: []
+    /admin/users/order:
+        get:
+            summary: 'Order BREAD items.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/users/action:
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    '/admin/users/{id}/restore':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: sit
+                required: true
+                schema:
+                    type: string
+    /admin/users/relation:
+        get:
+            summary: 'Get BREAD relations data.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+    /admin/users/remove:
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/users:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        post:
+            summary: 'POST BRE(A)D - Store data.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/users/create:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+    '/admin/users/{id}':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        put:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+        delete:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: omnis
+                required: true
+                schema:
+                    type: string
+    '/admin/users/{id}/edit':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: voluptas
+                required: true
+                schema:
+                    type: string
+    /admin/menus/order:
+        get:
+            summary: 'Order BREAD items.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/menus/action:
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    '/admin/menus/{id}/restore':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: repudiandae
+                required: true
+                schema:
+                    type: string
+    /admin/menus/relation:
+        get:
+            summary: 'Get BREAD relations data.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+    /admin/menus/remove:
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/menus:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        post:
+            summary: 'POST BRE(A)D - Store data.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/menus/create:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+    '/admin/menus/{id}':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        put:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+        delete:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: vitae
+                required: true
+                schema:
+                    type: string
+    '/admin/menus/{id}/edit':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: occaecati
+                required: true
+                schema:
+                    type: string
+    /admin/roles/order:
+        get:
+            summary: 'Order BREAD items.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/roles/action:
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    '/admin/roles/{id}/restore':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: exercitationem
+                required: true
+                schema:
+                    type: string
+    /admin/roles/relation:
+        get:
+            summary: 'Get BREAD relations data.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+    /admin/roles/remove:
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/roles:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+    /admin/roles/create:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+    '/admin/roles/{id}':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        put:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+        delete:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: esse
+                required: true
+                schema:
+                    type: string
+    '/admin/roles/{id}/edit':
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Api-Version
+                    description: ''
+                    example: v1
+                    schema:
+                        type: string
+            responses:
+                302:
+                    description: ''
+                    content:
+                        text/plain:
+                            schema:
+                                type: string
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: sit
+                required: true
+                schema:
+                    type: string
     '/admin/menus/{menu}/builder':
         get:
             summary: ''
@@ -908,7 +2294,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: aliquid
+                example: necessitatibus
                 required: true
                 schema:
                     type: string
@@ -947,7 +2333,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: nulla
+                example: possimus
                 required: true
                 schema:
                     type: string
@@ -986,7 +2372,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: eaque
+                example: architecto
                 required: true
                 schema:
                     type: string
@@ -994,7 +2380,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: cum
+                example: exercitationem
                 required: true
                 schema:
                     type: string
@@ -1062,7 +2448,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: ut
+                example: minima
                 required: true
                 schema:
                     type: string
@@ -1196,7 +2582,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: quibusdam
+                example: eum
                 required: true
                 schema:
                     type: string
@@ -1242,7 +2628,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: non
+                example: culpa
                 required: true
                 schema:
                     type: string
@@ -1288,7 +2674,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: quam
+                example: ut
                 required: true
                 schema:
                     type: string
@@ -1327,7 +2713,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: eos
+                example: eum
                 required: true
                 schema:
                     type: string
@@ -1686,7 +3072,7 @@ paths:
                 in: path
                 name: table
                 description: ''
-                example: qui
+                example: sit
                 required: true
                 schema:
                     type: string
@@ -1732,7 +3118,7 @@ paths:
                 in: path
                 name: table
                 description: ''
-                example: amet
+                example: ut
                 required: true
                 schema:
                     type: string
@@ -1800,7 +3186,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: omnis
+                example: voluptas
                 required: true
                 schema:
                     type: string
@@ -1876,7 +3262,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: sint
+                example: et
                 required: true
                 schema:
                     type: string
@@ -2083,7 +3469,7 @@ paths:
                 in: path
                 name: database
                 description: ''
-                example: nemo
+                example: voluptatem
                 required: true
                 schema:
                     type: string
@@ -2129,7 +3515,7 @@ paths:
                 in: path
                 name: database
                 description: ''
-                example: possimus
+                example: neque
                 required: true
                 schema:
                     type: string
@@ -2289,7 +3675,7 @@ paths:
                 in: path
                 name: any
                 description: ''
-                example: et
+                example: ipsam
                 required: true
                 schema:
                     type: string
@@ -2352,7 +3738,7 @@ paths:
                                     - { id: 14, url: 'https://www.tvmaze.com/shows/14/continuum', name: Continuum, type: Scripted, language: English, genres: [Drama, Crime, Science-Fiction], status: Ended, runtime: 60, premiered: '2012-05-27', officialSite: 'http://www.showcase.ca/Continuum', schedule: { time: '21:00', days: [Sunday] }, rating: { average: 8.2 }, weight: 95, network: { id: 6, name: Showcase, country: { name: Canada, code: CA, timezone: America/Halifax } }, webChannel: null, externals: { tvrage: 30789, thetvdb: 258171, imdb: tt1954347 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/0/184.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/0/184.jpg' }, summary: '<p><b>Continuum </b>is a one-hour police drama centered on Kiera Cameron, a regular cop from 65 years in the future who finds herself trapped in present day Vancouver. She is alone, a stranger in a strange land, and has eight of the most ruthless criminals from the future, known as Liber8, loose in the city.</p><p>Lucky for Kiera, through the use of her CMR (cellular memory recall), a futuristic liquid chip technology implanted in her brain, she connects with Alec Sadler, a seventeen-year-old tech genius. When Kiera calls and Alec answers, a very unique partnership begins.</p><p>Kiera''s first desire is to get "home." But until she figures out a way to do that, she must survive in our time period and use all the resources available to her to track and capture the terrorists before they alter history enough to change the course of the future. After all, what''s the point of going back if the future isn''t the one you left?</p>', updated: 1573153509, _links: { self: { href: 'https://api.tvmaze.com/shows/14' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/228308' } } }
                                     - { id: 15, url: 'https://www.tvmaze.com/shows/15/constantine', name: Constantine, type: Scripted, language: English, genres: [Drama, Action, Horror], status: Ended, runtime: 60, premiered: '2014-10-24', officialSite: 'https://www.nbc.com/constantine', schedule: { time: '20:00', days: [Friday] }, rating: { average: 7.5 }, weight: 83, network: { id: 1, name: NBC, country: { name: 'United States', code: US, timezone: America/New_York } }, webChannel: null, externals: { tvrage: 38109, thetvdb: 273690, imdb: tt3489184 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/0/154.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/0/154.jpg' }, summary: '<p>Based on the wildly popular comic book series "Hellblazer" from DC Comics, seasoned demon hunter and master of the occult John Constantine is armed with a ferocious knowledge of the dark arts and a wickedly naughty wit. He fights the good fight - or at least he did. With his soul already damned to hell, he''s decided to abandon his campaign against evil until a series of events thrusts him back into the fray, and he''ll do whatever it takes to protect the innocent. With the balance of good and evil on the line‎, <b>Constantine </b>will use his skills to travel the country, find the supernatural terrors that threaten our world and send them back where they belong. After that, who knows... maybe there''s hope for him and his soul after all.</p>', updated: 1603789444, _links: { self: { href: 'https://api.tvmaze.com/shows/15' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/122719' } } }
                                     - { id: 16, url: 'https://www.tvmaze.com/shows/16/penny-dreadful', name: 'Penny Dreadful', type: Scripted, language: English, genres: [Horror, Thriller, Supernatural], status: Ended, runtime: 60, premiered: '2014-05-11', officialSite: 'http://www.sho.com/penny-dreadful', schedule: { time: '21:00', days: [Sunday] }, rating: { average: 8.3 }, weight: 89, network: { id: 9, name: Showtime, country: { name: 'United States', code: US, timezone: America/New_York } }, webChannel: null, externals: { tvrage: 34172, thetvdb: 265766, imdb: tt2628232 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/48/122237.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/48/122237.jpg' }, summary: '<p>Some of literature''s most terrifying characters, including Dr. Frankenstein and his monster, Dorian Gray, and iconic figures from the novel Dracula are lurking in the darkest corners of Victorian London. They are joined by a core of original characters in a complex, frightening new narrative. <b>Penny Dreadful </b>is a psychological thriller filled with dark mystery and suspense, where personal demons from the past can be stronger than vampires, evil spirits and immortal beasts.</p>', updated: 1602049308, _links: { self: { href: 'https://api.tvmaze.com/shows/16' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/766196' } } }
-                                    - { id: 18, url: 'https://www.tvmaze.com/shows/18/the-amazing-race', name: 'The Amazing Race', type: Reality, language: English, genres: [Action, Adventure, Family], status: Running, runtime: 60, premiered: '2001-09-05', officialSite: 'http://www.cbs.com/shows/amazing_race/', schedule: { time: '20:00', days: [Wednesday] }, rating: { average: 7.8 }, weight: 94, network: { id: 2, name: CBS, country: { name: 'United States', code: US, timezone: America/New_York } }, webChannel: null, externals: { tvrage: 5566, thetvdb: 77666, imdb: tt0285335 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/237/592579.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/237/592579.jpg' }, summary: '<p>From athletes and actors to tattoo artists, social workers and musicians - a diverse mix of teams will need to utilize their street smarts and savvy know-how to compete in the race of their lifetime.</p>', updated: 1613850245, _links: { self: { href: 'https://api.tvmaze.com/shows/18' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/1972370' } } }
+                                    - { id: 18, url: 'https://www.tvmaze.com/shows/18/the-amazing-race', name: 'The Amazing Race', type: Reality, language: English, genres: [Action, Adventure, Family], status: 'To Be Determined', runtime: 60, premiered: '2001-09-05', officialSite: 'http://www.cbs.com/shows/amazing_race/', schedule: { time: '20:00', days: [Wednesday] }, rating: { average: 7.8 }, weight: 93, network: { id: 2, name: CBS, country: { name: 'United States', code: US, timezone: America/New_York } }, webChannel: null, externals: { tvrage: 5566, thetvdb: 77666, imdb: tt0285335 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/237/592579.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/237/592579.jpg' }, summary: '<p>From athletes and actors to tattoo artists, social workers and musicians - a diverse mix of teams will need to utilize their street smarts and savvy know-how to compete in the race of their lifetime.</p>', updated: 1613941716, _links: { self: { href: 'https://api.tvmaze.com/shows/18' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/1972370' } } }
                                     - { id: 19, url: 'https://www.tvmaze.com/shows/19/supernatural', name: Supernatural, type: Scripted, language: English, genres: [Drama, Action, Supernatural], status: Ended, runtime: 60, premiered: '2005-09-13', officialSite: 'http://www.cwtv.com/shows/supernatural', schedule: { time: '20:00', days: [Thursday] }, rating: { average: 8.4 }, weight: 98, network: { id: 5, name: 'The CW', country: { name: 'United States', code: US, timezone: America/New_York } }, webChannel: null, externals: { tvrage: 5410, thetvdb: 78901, imdb: tt0460681 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/268/672051.jpg' }, summary: '<p>This haunting series follows the Winchester brothers as they crisscross the lonely and mysterious back roads of the country in their ''67 Chevy Impala, hunting down every evil supernatural force they encounter along the way.</p>', updated: 1613252813, _links: { self: { href: 'https://api.tvmaze.com/shows/19' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/1753661' } } }
                                     - { id: 20, url: 'https://www.tvmaze.com/shows/20/the-strain', name: 'The Strain', type: Scripted, language: English, genres: [Drama, Horror, Thriller], status: Ended, runtime: 60, premiered: '2014-07-13', officialSite: 'http://www.fxnetworks.com/thestrain', schedule: { time: '22:00', days: [Sunday] }, rating: { average: 7.5 }, weight: 93, network: { id: 13, name: FX, country: { name: 'United States', code: US, timezone: America/New_York } }, webChannel: null, externals: { tvrage: 33229, thetvdb: 276564, imdb: tt2654620 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/70/175363.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/70/175363.jpg' }, summary: '<p><b>The Strain</b> is a high-concept thriller that tells the story of Dr. Ephraim Goodweather, the head of the Center for Disease Control Canary Team in New York City. He and his team are called upon to investigate a mysterious viral outbreak with hallmarks of an ancient and evil strain of vampirism. As the strain spreads, Goodweather, his team, and an assembly of everyday New Yorkers wage war for the fate of humanity itself.</p>', updated: 1604405184, _links: { self: { href: 'https://api.tvmaze.com/shows/20' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/1128366' } } }
                                     - { id: 21, url: 'https://www.tvmaze.com/shows/21/the-last-ship', name: 'The Last Ship', type: Scripted, language: English, genres: [Drama, Action, Thriller], status: Ended, runtime: 60, premiered: '2014-06-22', officialSite: 'http://www.tntdrama.com/shows/the-last-ship', schedule: { time: '21:00', days: [Sunday] }, rating: { average: 7.6 }, weight: 93, network: { id: 14, name: TNT, country: { name: 'United States', code: US, timezone: America/New_York } }, webChannel: null, externals: { tvrage: 33158, thetvdb: 269533, imdb: tt2402207 }, image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/164/412464.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/164/412464.jpg' }, summary: '<p>Their mission is simple: Find a cure. Stop the virus. Save the world. When a global pandemic wipes out eighty percent of the planet''s population, the crew of a lone and unaffected Navy destroyer, the USS Nathan James, must find a way to pull humanity from the brink of extinction.</p>', updated: 1612543190, _links: { self: { href: 'https://api.tvmaze.com/shows/21' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/1383245' } } }
@@ -2463,47 +3849,47 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    id: 9
-                                    url: 'https://www.tvmaze.com/shows/9/revenge'
-                                    name: Revenge
+                                    id: 1
+                                    url: 'https://www.tvmaze.com/shows/1/under-the-dome'
+                                    name: 'Under the Dome'
                                     type: Scripted
                                     language: English
-                                    genres: [Drama, Thriller, Mystery]
+                                    genres: [Drama, Science-Fiction, Thriller]
                                     status: Ended
                                     runtime: 60
-                                    premiered: '2011-09-21'
-                                    officialSite: null
-                                    schedule: { time: '22:00', days: [Sunday] }
-                                    rating: { average: 7.8 }
-                                    weight: 78
-                                    network: { id: 3, name: ABC, country: { name: 'United States', code: US, timezone: America/New_York } }
+                                    premiered: '2013-06-24'
+                                    officialSite: 'http://www.cbs.com/shows/under-the-dome/'
+                                    schedule: { time: '22:00', days: [Thursday] }
+                                    rating: { average: 6.5 }
+                                    weight: 95
+                                    network: { id: 2, name: CBS, country: { name: 'United States', code: US, timezone: America/New_York } }
                                     webChannel: null
-                                    externals: { tvrage: 28387, thetvdb: 248837, imdb: tt1837642 }
-                                    image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/82/206879.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg' }
-                                    summary: '<p>This is not a story about forgiveness; <b>Revenge</b> is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.</p>'
-                                    updated: 1577712742
-                                    _links: { self: { href: 'https://api.tvmaze.com/shows/9' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/154117' } }
+                                    externals: { tvrage: 25988, thetvdb: 264492, imdb: tt1553656 }
+                                    image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg' }
+                                    summary: '<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town''s inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>'
+                                    updated: 1573667713
+                                    _links: { self: { href: 'https://api.tvmaze.com/shows/1' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/185054' } }
                                 properties:
-                                    id: { type: integer, example: 9 }
-                                    url: { type: string, example: 'https://www.tvmaze.com/shows/9/revenge' }
-                                    name: { type: string, example: Revenge }
+                                    id: { type: integer, example: 1 }
+                                    url: { type: string, example: 'https://www.tvmaze.com/shows/1/under-the-dome' }
+                                    name: { type: string, example: 'Under the Dome' }
                                     type: { type: string, example: Scripted }
                                     language: { type: string, example: English }
-                                    genres: { type: array, example: [Drama, Thriller, Mystery], items: { type: string } }
+                                    genres: { type: array, example: [Drama, Science-Fiction, Thriller], items: { type: string } }
                                     status: { type: string, example: Ended }
                                     runtime: { type: integer, example: 60 }
-                                    premiered: { type: string, example: '2011-09-21' }
-                                    officialSite: { type: string, example: null }
-                                    schedule: { type: object, example: { time: '22:00', days: [Sunday] } }
-                                    rating: { type: object, example: { average: 7.8 } }
-                                    weight: { type: integer, example: 78 }
-                                    network: { type: object, example: { id: 3, name: ABC, country: { name: 'United States', code: US, timezone: America/New_York } } }
+                                    premiered: { type: string, example: '2013-06-24' }
+                                    officialSite: { type: string, example: 'http://www.cbs.com/shows/under-the-dome/' }
+                                    schedule: { type: object, example: { time: '22:00', days: [Thursday] } }
+                                    rating: { type: object, example: { average: 6.5 } }
+                                    weight: { type: integer, example: 95 }
+                                    network: { type: object, example: { id: 2, name: CBS, country: { name: 'United States', code: US, timezone: America/New_York } } }
                                     webChannel: { type: string, example: null }
-                                    externals: { type: object, example: { tvrage: 28387, thetvdb: 248837, imdb: tt1837642 } }
-                                    image: { type: object, example: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/82/206879.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg' } }
-                                    summary: { type: string, example: '<p>This is not a story about forgiveness; <b>Revenge</b> is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.</p>' }
-                                    updated: { type: integer, example: 1577712742 }
-                                    _links: { type: object, example: { self: { href: 'https://api.tvmaze.com/shows/9' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/154117' } } }
+                                    externals: { type: object, example: { tvrage: 25988, thetvdb: 264492, imdb: tt1553656 } }
+                                    image: { type: object, example: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg' } }
+                                    summary: { type: string, example: '<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town''s inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>' }
+                                    updated: { type: integer, example: 1573667713 }
+                                    _links: { type: object, example: { self: { href: 'https://api.tvmaze.com/shows/1' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/185054' } } }
             tags:
                 - 'TvShows management'
             security: []
@@ -2512,7 +3898,7 @@ paths:
                 in: path
                 name: id
                 description: 'The ID of the TvShow.'
-                example: 9
+                example: 1
                 required: true
                 schema:
                     type: integer

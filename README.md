@@ -29,6 +29,7 @@
 - Laravel Seeders
 - API documentation for API consumers
 - Pull requests and code review (Well, here I accepted it for myself at https://github.com/nyssLab/fashionette/pull/1)
+- Laravel debugbar for better dev control (from barryvdh/laravel-debugbar)
 
 # Helpful Stuff
 
