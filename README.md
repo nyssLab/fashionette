@@ -6,6 +6,10 @@
 
 </p>
 
+#### Quick overview
+
+[Video overview here](https://drive.google.com/file/d/1xzzKglxmpMAIHynWXB3SRQqeFYC0_7AG/view?usp=sharing)
+
 # Technologies used
 
 - Laravel 8.28
