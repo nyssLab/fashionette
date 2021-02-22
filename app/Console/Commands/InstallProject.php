@@ -39,6 +39,10 @@ class InstallProject extends Command {
         // default seed
         $this->call('db:seed');
 
+        // API docs
+        $this->info('Generating API docs...');
+        $this->call('scribe:generate');
+
         $this->info('Project is READY.');
         return true;
     }

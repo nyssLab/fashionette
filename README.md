@@ -16,6 +16,7 @@
 
 - Laravel Voyager
 - Unit tests
+- knuckleswtf/scribe for the API docs
 
 ## Best practice used
 
@@ -26,14 +27,16 @@
 - Commented out code
 - Lightweight and maintainable classes
 - Laravel Seeders
+- API documentation for API consumers
 
-## Other Stuff
+## Helpful Stuff
 
-- Index and Show API routes are cached for 1 min (configurable) and to bypass the limit of 20 requests / 10 sec 
+- Index and Show APIs are cached for 1 min (configurable) and to bypass the limit of 20 requests / 10 sec 
 - Number of items per page is configurable via backoffice at /admin
-    - i.e. TVMaze API has a pagination of 250 per page, now fully customizable
+    - i.e. TVMaze API has a pagination of 250 per page, now fully customizable (example: 10/page)
 - use _**admin@fashionette.test**_ / _**secret**_ to login to /admin
 - Added 404 page for front end
+- API docs at /docs
 
 ## Steps to install
 
@@ -48,4 +51,5 @@
 
 - Users authentication
 - Favorite show and watch later lists
+- Push notifications about new episodes for favorite shows
 - Ability to rate a TV Show
