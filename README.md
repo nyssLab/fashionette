@@ -6,19 +6,19 @@
 
 </p>
 
-## Technologies used
+# Technologies used
 
 - Laravel 8.28
 - Vue.Js 2.6
 - PHP 7.4
 
-## Tools used
+# Tools used
 
 - Laravel Voyager
 - Unit tests
 - knuckleswtf/scribe for the API docs
 
-## Best practice used
+# Best practice used
 
 - PHP Standard Recommendation PSR-12
 - Repository design pattern
@@ -30,7 +30,7 @@
 - API documentation for API consumers
 - Pull requests and code review (Well, here I accepted it for myself at https://github.com/nyssLab/fashionette/pull/1)
 
-## Helpful Stuff
+# Helpful Stuff
 
 - Index and Show APIs are cached for 1 min (configurable) and to bypass the limit of 20 requests / 10 sec 
 - Number of items per page is configurable via backoffice at /admin
@@ -39,16 +39,31 @@
 - Added 404 page for front end
 - API docs at /docs
 
-## Steps to install
+# Project structure
+#### Front end
+- Home page at / : for TV Shows listing
+- Search page using the search input in header
+- Single TV Show page by clicking any item
+- About us page (dummy)
+- 404 page for any other route
+#### Back end
+- /admin for administration (use _**admin@fashionette.test**_ / _**secret**_ to login to /admin)
+- /api/shows?lastId=0 for TVShows listing (lastId : last TVShow id for simpler pagination)
+- /api/shows/search?q=deadwood to search for TV Shows (q: search word)
+- /api/shows/{id} to show a specific TVShow (example /api/shows/3 )
+
+
+# Steps to install
 
 - Clone project
 - `npm install`
 - `composer install`
-- Configure Database parameters in .env file
+- Create and .env file from .env.example and configure Database parameters in it
+- `php artisan key:generate`
 - `php artisan project:install`
 
 
-## TODO if we had more time
+# TODO if we had more time
 
 - Users authentication
 - Favorite show and watch later lists

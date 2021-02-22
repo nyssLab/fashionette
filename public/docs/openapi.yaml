@@ -108,7 +108,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: laborum
+                example: assumenda
                 required: true
                 schema:
                     type: string
@@ -165,7 +165,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: aut
+                example: repellendus
                 required: true
                 schema:
                     type: string
@@ -300,7 +300,7 @@ paths:
                 in: path
                 name: key
                 description: ''
-                example: mollitia
+                example: non
                 required: true
                 schema:
                     type: string
@@ -317,7 +317,7 @@ paths:
                         value: ''
                     present:
                         summary: 'When the value is present'
-                        value: ex
+                        value: facere
     /arrilot/load-widget:
         get:
             summary: 'The action to show widget output via ajax.'
@@ -419,7 +419,7 @@ paths:
                 in: path
                 name: any
                 description: ''
-                example: qui
+                example: repudiandae
                 required: true
                 schema:
                     type: string
@@ -456,7 +456,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\r\n<html lang=\"en\" dir=\"ltr\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"robots\" content=\"none\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui\">\r\n    <meta name=\"description\" content=\"admin login\">\r\n    <title>Admin - Voyager</title>\r\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/admin/voyager-assets?path=css%2Fapp.css\">\r\n        <style>\r\n        body {\r\n            background-image:url('http://fashionette.test/admin/voyager-assets?path=images%2Fbg.jpg');\r\n            background-color: #FFFFFF;\r\n        }\r\n        body.login .login-sidebar {\r\n            border-top:5px solid #22A7F0;\r\n        }\r\n        @media (max-width: 767px) {\r\n            body.login .login-sidebar {\r\n                border-top:0px !important;\r\n                border-left:5px solid #22A7F0;\r\n            }\r\n        }\r\n        body.login .form-group-default.focused{\r\n            border-color:#22A7F0;\r\n        }\r\n        .login-button, .bar:before, .bar:after{\r\n            background:#22A7F0;\r\n        }\r\n        .remember-me-text{\r\n            padding:0 5px;\r\n        }\r\n    </style>\r\n    \r\n        <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\">\r\n</head>\r\n<body class=\"login\">\r\n<div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n        <div class=\"faded-bg animated\"></div>\r\n        <div class=\"hidden-xs col-sm-7 col-md-8\">\r\n            <div class=\"clearfix\">\r\n                <div class=\"col-sm-12 col-md-10 col-md-offset-2\">\r\n                    <div class=\"logo-title-container\">\r\n                                                                            <img class=\"img-responsive pull-left flip logo hidden-xs animated fadeIn\" src=\"http://fashionette.test/admin/voyager-assets?path=images%2Flogo-icon-light.png\" alt=\"Logo Icon\">\r\n                                                <div class=\"copy animated fadeIn\">\r\n                            <h1>Voyager</h1>\r\n                            <p>Welcome to Voyager. The Missing Admin for Laravel</p>\r\n                        </div>\r\n                    </div> <!-- .logo-title-container -->\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 col-sm-5 col-md-4 login-sidebar\">\r\n\r\n               <div class=\"login-container\">\r\n\r\n        <p>Sign In Below:</p>\r\n\r\n        <form action=\"http://fashionette.test/admin/login\" method=\"POST\">\r\n            <input type=\"hidden\" name=\"_token\" value=\"AfVvHjMKNXrmn1ICvkshSmKXSys5C6rwm3UghAiN\">\r\n            <div class=\"form-group form-group-default\" id=\"emailGroup\">\r\n                <label>E-mail</label>\r\n                <div class=\"controls\">\r\n                    <input type=\"text\" name=\"email\" id=\"email\" value=\"\" placeholder=\"E-mail\" class=\"form-control\" required>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"form-group form-group-default\" id=\"passwordGroup\">\r\n                <label>Password</label>\r\n                <div class=\"controls\">\r\n                    <input type=\"password\" name=\"password\" placeholder=\"Password\" class=\"form-control\" required>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"form-group\" id=\"rememberMeGroup\">\r\n                <div class=\"controls\">\r\n                    <input type=\"checkbox\" name=\"remember\" id=\"remember\" value=\"1\"><label for=\"remember\" class=\"remember-me-text\">Remember me</label>\r\n                </div>\r\n            </div>\r\n\r\n            <button type=\"submit\" class=\"btn btn-block login-button\">\r\n                <span class=\"signingin hidden\"><span class=\"voyager-refresh\"></span> Logging in...</span>\r\n                <span class=\"signin\">Login</span>\r\n            </button>\r\n\r\n        </form>\r\n\r\n        <div style=\"clear:both\"></div>\r\n\r\n        \r\n    </div> <!-- .login-container -->\r\n\r\n        </div> <!-- .login-sidebar -->\r\n    </div> <!-- .row -->\r\n</div> <!-- .container-fluid -->\r\n\r\n    <script>\r\n        var btn = document.querySelector('button[type=\"submit\"]');\r\n        var form = document.forms[0];\r\n        var email = document.querySelector('[name=\"email\"]');\r\n        var password = document.querySelector('[name=\"password\"]');\r\n        btn.addEventListener('click', function(ev){\r\n            if (form.checkValidity()) {\r\n                btn.querySelector('.signingin').className = 'signingin';\r\n                btn.querySelector('.signin').className = 'signin hidden';\r\n            } else {\r\n                ev.preventDefault();\r\n            }\r\n        });\r\n        email.focus();\r\n        document.getElementById('emailGroup').classList.add(\"focused\");\r\n\r\n        // Focus events for email and password fields\r\n        email.addEventListener('focusin', function(e){\r\n            document.getElementById('emailGroup').classList.add(\"focused\");\r\n        });\r\n        email.addEventListener('focusout', function(e){\r\n            document.getElementById('emailGroup').classList.remove(\"focused\");\r\n        });\r\n\r\n        password.addEventListener('focusin', function(e){\r\n            document.getElementById('passwordGroup').classList.add(\"focused\");\r\n        });\r\n        password.addEventListener('focusout', function(e){\r\n            document.getElementById('passwordGroup').classList.remove(\"focused\");\r\n        });\r\n\r\n    </script>\r\n</body>\r\n</html>\r\n"
+                                example: "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"robots\" content=\"none\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui\">\n    <meta name=\"description\" content=\"admin login\">\n    <title>Admin - Voyager</title>\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/admin/voyager-assets?path=css%2Fapp.css\">\n        <style>\n        body {\n            background-image:url('http://fashionette.test/admin/voyager-assets?path=images%2Fbg.jpg');\n            background-color: #FFFFFF;\n        }\n        body.login .login-sidebar {\n            border-top:5px solid #22A7F0;\n        }\n        @media (max-width: 767px) {\n            body.login .login-sidebar {\n                border-top:0px !important;\n                border-left:5px solid #22A7F0;\n            }\n        }\n        body.login .form-group-default.focused{\n            border-color:#22A7F0;\n        }\n        .login-button, .bar:before, .bar:after{\n            background:#22A7F0;\n        }\n        .remember-me-text{\n            padding:0 5px;\n        }\n    </style>\n    \n        <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\">\n</head>\n<body class=\"login\">\n<div class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"faded-bg animated\"></div>\n        <div class=\"hidden-xs col-sm-7 col-md-8\">\n            <div class=\"clearfix\">\n                <div class=\"col-sm-12 col-md-10 col-md-offset-2\">\n                    <div class=\"logo-title-container\">\n                                                                            <img class=\"img-responsive pull-left flip logo hidden-xs animated fadeIn\" src=\"http://fashionette.test/admin/voyager-assets?path=images%2Flogo-icon-light.png\" alt=\"Logo Icon\">\n                                                <div class=\"copy animated fadeIn\">\n                            <h1>Voyager</h1>\n                            <p>Welcome to Voyager. The Missing Admin for Laravel</p>\n                        </div>\n                    </div> <!-- .logo-title-container -->\n                </div>\n            </div>\n        </div>\n\n        <div class=\"col-xs-12 col-sm-5 col-md-4 login-sidebar\">\n\n               <div class=\"login-container\">\n\n        <p>Sign In Below:</p>\n\n        <form action=\"http://fashionette.test/admin/login\" method=\"POST\">\n            <input type=\"hidden\" name=\"_token\" value=\"uuaxhJwuJ8ZJmDBvbpMhl5y7Shw8HWykbmBLvmtb\">\n            <div class=\"form-group form-group-default\" id=\"emailGroup\">\n                <label>E-mail</label>\n                <div class=\"controls\">\n                    <input type=\"text\" name=\"email\" id=\"email\" value=\"\" placeholder=\"E-mail\" class=\"form-control\" required>\n                </div>\n            </div>\n\n            <div class=\"form-group form-group-default\" id=\"passwordGroup\">\n                <label>Password</label>\n                <div class=\"controls\">\n                    <input type=\"password\" name=\"password\" placeholder=\"Password\" class=\"form-control\" required>\n                </div>\n            </div>\n\n            <div class=\"form-group\" id=\"rememberMeGroup\">\n                <div class=\"controls\">\n                    <input type=\"checkbox\" name=\"remember\" id=\"remember\" value=\"1\"><label for=\"remember\" class=\"remember-me-text\">Remember me</label>\n                </div>\n            </div>\n\n            <button type=\"submit\" class=\"btn btn-block login-button\">\n                <span class=\"signingin hidden\"><span class=\"voyager-refresh\"></span> Logging in...</span>\n                <span class=\"signin\">Login</span>\n            </button>\n\n        </form>\n\n        <div style=\"clear:both\"></div>\n\n        \n    </div> <!-- .login-container -->\n\n        </div> <!-- .login-sidebar -->\n    </div> <!-- .row -->\n</div> <!-- .container-fluid -->\n\n    <script>\n        var btn = document.querySelector('button[type=\"submit\"]');\n        var form = document.forms[0];\n        var email = document.querySelector('[name=\"email\"]');\n        var password = document.querySelector('[name=\"password\"]');\n        btn.addEventListener('click', function(ev){\n            if (form.checkValidity()) {\n                btn.querySelector('.signingin').className = 'signingin';\n                btn.querySelector('.signin').className = 'signin hidden';\n            } else {\n                ev.preventDefault();\n            }\n        });\n        email.focus();\n        document.getElementById('emailGroup').classList.add(\"focused\");\n\n        // Focus events for email and password fields\n        email.addEventListener('focusin', function(e){\n            document.getElementById('emailGroup').classList.add(\"focused\");\n        });\n        email.addEventListener('focusout', function(e){\n            document.getElementById('emailGroup').classList.remove(\"focused\");\n        });\n\n        password.addEventListener('focusin', function(e){\n            document.getElementById('passwordGroup').classList.add(\"focused\");\n        });\n        password.addEventListener('focusout', function(e){\n            document.getElementById('passwordGroup').classList.remove(\"focused\");\n        });\n\n    </script>\n</body>\n</html>\n"
             tags:
                 - Endpoints
             security: []
@@ -597,7 +597,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: corporis
+                example: laudantium
                 required: true
                 schema:
                     type: string
@@ -643,7 +643,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: asperiores
+                example: et
                 required: true
                 schema:
                     type: string
@@ -689,7 +689,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: quia
+                example: ut
                 required: true
                 schema:
                     type: string
@@ -728,7 +728,7 @@ paths:
                 in: path
                 name: name
                 description: ''
-                example: impedit
+                example: mollitia
                 required: true
                 schema:
                     type: string
@@ -866,1392 +866,6 @@ paths:
             tags:
                 - Endpoints
             security: []
-    /admin/users/order:
-        get:
-            summary: 'Order BREAD items.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/users/action:
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    '/admin/users/{id}/restore':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: aspernatur
-                required: true
-                schema:
-                    type: string
-    /admin/users/relation:
-        get:
-            summary: 'Get BREAD relations data.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-    /admin/users/remove:
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/users:
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        post:
-            summary: 'POST BRE(A)D - Store data.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/users/create:
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-    '/admin/users/{id}':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        put:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-        delete:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: sint
-                required: true
-                schema:
-                    type: string
-    '/admin/users/{id}/edit':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: officiis
-                required: true
-                schema:
-                    type: string
-    /admin/menus/order:
-        get:
-            summary: 'Order BREAD items.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/menus/action:
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    '/admin/menus/{id}/restore':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: in
-                required: true
-                schema:
-                    type: string
-    /admin/menus/relation:
-        get:
-            summary: 'Get BREAD relations data.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-    /admin/menus/remove:
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/menus:
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        post:
-            summary: 'POST BRE(A)D - Store data.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/menus/create:
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-    '/admin/menus/{id}':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        put:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-        delete:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: quis
-                required: true
-                schema:
-                    type: string
-    '/admin/menus/{id}/edit':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: modi
-                required: true
-                schema:
-                    type: string
-    /admin/roles/order:
-        get:
-            summary: 'Order BREAD items.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/roles/action:
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    '/admin/roles/{id}/restore':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: tempora
-                required: true
-                schema:
-                    type: string
-    /admin/roles/relation:
-        get:
-            summary: 'Get BREAD relations data.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-    /admin/roles/remove:
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/roles:
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-    /admin/roles/create:
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-    '/admin/roles/{id}':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        put:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-        delete:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: iure
-                required: true
-                schema:
-                    type: string
-    '/admin/roles/{id}/edit':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Api-Version
-                    description: ''
-                    example: v1
-                    schema:
-                        type: string
-            responses:
-                302:
-                    description: ''
-                    content:
-                        text/plain:
-                            schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://fashionette.test/admin/login'\" />\n\n        <title>Redirecting to http://fashionette.test/admin/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://fashionette.test/admin/login\">http://fashionette.test/admin/login</a>.\n    </body>\n</html>"
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: id
-                description: ''
-                example: facilis
-                required: true
-                schema:
-                    type: string
     '/admin/menus/{menu}/builder':
         get:
             summary: ''
@@ -2294,7 +908,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: beatae
+                example: aliquid
                 required: true
                 schema:
                     type: string
@@ -2333,7 +947,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: quod
+                example: nulla
                 required: true
                 schema:
                     type: string
@@ -2372,7 +986,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: ducimus
+                example: eaque
                 required: true
                 schema:
                     type: string
@@ -2380,7 +994,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: officiis
+                example: cum
                 required: true
                 schema:
                     type: string
@@ -2448,7 +1062,7 @@ paths:
                 in: path
                 name: menu
                 description: ''
-                example: omnis
+                example: ut
                 required: true
                 schema:
                     type: string
@@ -2582,7 +1196,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: iste
+                example: quibusdam
                 required: true
                 schema:
                     type: string
@@ -2628,7 +1242,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: qui
+                example: non
                 required: true
                 schema:
                     type: string
@@ -2674,7 +1288,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: atque
+                example: quam
                 required: true
                 schema:
                     type: string
@@ -2713,7 +1327,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: voluptatem
+                example: eos
                 required: true
                 schema:
                     type: string
@@ -3072,7 +1686,7 @@ paths:
                 in: path
                 name: table
                 description: ''
-                example: optio
+                example: qui
                 required: true
                 schema:
                     type: string
@@ -3118,7 +1732,7 @@ paths:
                 in: path
                 name: table
                 description: ''
-                example: temporibus
+                example: amet
                 required: true
                 schema:
                     type: string
@@ -3186,7 +1800,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: eligendi
+                example: omnis
                 required: true
                 schema:
                     type: string
@@ -3262,7 +1876,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: quia
+                example: sint
                 required: true
                 schema:
                     type: string
@@ -3469,7 +2083,7 @@ paths:
                 in: path
                 name: database
                 description: ''
-                example: minima
+                example: nemo
                 required: true
                 schema:
                     type: string
@@ -3515,7 +2129,7 @@ paths:
                 in: path
                 name: database
                 description: ''
-                example: nesciunt
+                example: possimus
                 required: true
                 schema:
                     type: string
@@ -3666,7 +2280,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n    <title>Fashionette</title>\n\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/css/themify-icons/themify-icons.css\">\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/css/app.css\">\n</head>\n\n<body class=\"antialiased\">\n\n\n<div id=\"app\"></div>\n\n\n<script src=\"http://fashionette.test/js/app.js\"></script>\n</body>\n\n</html>\n"
+                                example: "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n\r\n    <title>Fashionette</title>\r\n\r\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/css/themify-icons/themify-icons.css\">\r\n    <link rel=\"stylesheet\" href=\"http://fashionette.test/css/app.css\">\r\n</head>\r\n\r\n<body class=\"antialiased\">\r\n\r\n\r\n<div id=\"app\"></div>\r\n\r\n\r\n<script src=\"http://fashionette.test/js/app.js\"></script>\r\n</body>\r\n\r\n</html>\r\n"
             tags:
                 - Endpoints
             security: []
@@ -3675,7 +2289,7 @@ paths:
                 in: path
                 name: any
                 description: ''
-                example: debitis
+                example: et
                 required: true
                 schema:
                     type: string
@@ -3849,47 +2463,47 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    id: 14
-                                    url: 'https://www.tvmaze.com/shows/14/continuum'
-                                    name: Continuum
+                                    id: 9
+                                    url: 'https://www.tvmaze.com/shows/9/revenge'
+                                    name: Revenge
                                     type: Scripted
                                     language: English
-                                    genres: [Drama, Crime, Science-Fiction]
+                                    genres: [Drama, Thriller, Mystery]
                                     status: Ended
                                     runtime: 60
-                                    premiered: '2012-05-27'
-                                    officialSite: 'http://www.showcase.ca/Continuum'
-                                    schedule: { time: '21:00', days: [Sunday] }
-                                    rating: { average: 8.2 }
-                                    weight: 95
-                                    network: { id: 6, name: Showcase, country: { name: Canada, code: CA, timezone: America/Halifax } }
+                                    premiered: '2011-09-21'
+                                    officialSite: null
+                                    schedule: { time: '22:00', days: [Sunday] }
+                                    rating: { average: 7.8 }
+                                    weight: 78
+                                    network: { id: 3, name: ABC, country: { name: 'United States', code: US, timezone: America/New_York } }
                                     webChannel: null
-                                    externals: { tvrage: 30789, thetvdb: 258171, imdb: tt1954347 }
-                                    image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/0/184.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/0/184.jpg' }
-                                    summary: '<p><b>Continuum </b>is a one-hour police drama centered on Kiera Cameron, a regular cop from 65 years in the future who finds herself trapped in present day Vancouver. She is alone, a stranger in a strange land, and has eight of the most ruthless criminals from the future, known as Liber8, loose in the city.</p><p>Lucky for Kiera, through the use of her CMR (cellular memory recall), a futuristic liquid chip technology implanted in her brain, she connects with Alec Sadler, a seventeen-year-old tech genius. When Kiera calls and Alec answers, a very unique partnership begins.</p><p>Kiera''s first desire is to get "home." But until she figures out a way to do that, she must survive in our time period and use all the resources available to her to track and capture the terrorists before they alter history enough to change the course of the future. After all, what''s the point of going back if the future isn''t the one you left?</p>'
-                                    updated: 1573153509
-                                    _links: { self: { href: 'https://api.tvmaze.com/shows/14' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/228308' } }
+                                    externals: { tvrage: 28387, thetvdb: 248837, imdb: tt1837642 }
+                                    image: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/82/206879.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg' }
+                                    summary: '<p>This is not a story about forgiveness; <b>Revenge</b> is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.</p>'
+                                    updated: 1577712742
+                                    _links: { self: { href: 'https://api.tvmaze.com/shows/9' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/154117' } }
                                 properties:
-                                    id: { type: integer, example: 14 }
-                                    url: { type: string, example: 'https://www.tvmaze.com/shows/14/continuum' }
-                                    name: { type: string, example: Continuum }
+                                    id: { type: integer, example: 9 }
+                                    url: { type: string, example: 'https://www.tvmaze.com/shows/9/revenge' }
+                                    name: { type: string, example: Revenge }
                                     type: { type: string, example: Scripted }
                                     language: { type: string, example: English }
-                                    genres: { type: array, example: [Drama, Crime, Science-Fiction], items: { type: string } }
+                                    genres: { type: array, example: [Drama, Thriller, Mystery], items: { type: string } }
                                     status: { type: string, example: Ended }
                                     runtime: { type: integer, example: 60 }
-                                    premiered: { type: string, example: '2012-05-27' }
-                                    officialSite: { type: string, example: 'http://www.showcase.ca/Continuum' }
-                                    schedule: { type: object, example: { time: '21:00', days: [Sunday] } }
-                                    rating: { type: object, example: { average: 8.2 } }
-                                    weight: { type: integer, example: 95 }
-                                    network: { type: object, example: { id: 6, name: Showcase, country: { name: Canada, code: CA, timezone: America/Halifax } } }
+                                    premiered: { type: string, example: '2011-09-21' }
+                                    officialSite: { type: string, example: null }
+                                    schedule: { type: object, example: { time: '22:00', days: [Sunday] } }
+                                    rating: { type: object, example: { average: 7.8 } }
+                                    weight: { type: integer, example: 78 }
+                                    network: { type: object, example: { id: 3, name: ABC, country: { name: 'United States', code: US, timezone: America/New_York } } }
                                     webChannel: { type: string, example: null }
-                                    externals: { type: object, example: { tvrage: 30789, thetvdb: 258171, imdb: tt1954347 } }
-                                    image: { type: object, example: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/0/184.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/0/184.jpg' } }
-                                    summary: { type: string, example: '<p><b>Continuum </b>is a one-hour police drama centered on Kiera Cameron, a regular cop from 65 years in the future who finds herself trapped in present day Vancouver. She is alone, a stranger in a strange land, and has eight of the most ruthless criminals from the future, known as Liber8, loose in the city.</p><p>Lucky for Kiera, through the use of her CMR (cellular memory recall), a futuristic liquid chip technology implanted in her brain, she connects with Alec Sadler, a seventeen-year-old tech genius. When Kiera calls and Alec answers, a very unique partnership begins.</p><p>Kiera''s first desire is to get "home." But until she figures out a way to do that, she must survive in our time period and use all the resources available to her to track and capture the terrorists before they alter history enough to change the course of the future. After all, what''s the point of going back if the future isn''t the one you left?</p>' }
-                                    updated: { type: integer, example: 1573153509 }
-                                    _links: { type: object, example: { self: { href: 'https://api.tvmaze.com/shows/14' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/228308' } } }
+                                    externals: { type: object, example: { tvrage: 28387, thetvdb: 248837, imdb: tt1837642 } }
+                                    image: { type: object, example: { medium: 'https://static.tvmaze.com/uploads/images/medium_portrait/82/206879.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg' } }
+                                    summary: { type: string, example: '<p>This is not a story about forgiveness; <b>Revenge</b> is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. While serving his time, the conspirators plotted and murdered David in order to prevent the truth from coming out. Emily is now back with a new identity and ready to take vengeance on the people that murdered her father and stole her childhood.</p>' }
+                                    updated: { type: integer, example: 1577712742 }
+                                    _links: { type: object, example: { self: { href: 'https://api.tvmaze.com/shows/9' }, previousepisode: { href: 'https://api.tvmaze.com/episodes/154117' } } }
             tags:
                 - 'TvShows management'
             security: []
@@ -3898,7 +2512,7 @@ paths:
                 in: path
                 name: id
                 description: 'The ID of the TvShow.'
-                example: 14
+                example: 9
                 required: true
                 schema:
                     type: integer

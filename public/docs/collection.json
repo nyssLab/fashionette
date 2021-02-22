@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Fashionette",
-        "_postman_id": "1b903955-91b6-492f-89ad-8257dfe2fbbb",
+        "_postman_id": "86755785-bba7-421e-915c-e961d9dd70fd",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -65,7 +65,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "laborum",
+                                    "value": "assumenda",
                                     "description": ""
                                 }
                             ]
@@ -106,7 +106,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "aut",
+                                    "value": "repellendus",
                                     "description": ""
                                 }
                             ]
@@ -213,13 +213,13 @@
                                 {
                                     "id": "key",
                                     "key": "key",
-                                    "value": "mollitia",
+                                    "value": "non",
                                     "description": ""
                                 },
                                 {
                                     "id": "tags",
                                     "key": "tags",
-                                    "value": "ex",
+                                    "value": "facere",
                                     "description": ""
                                 }
                             ]
@@ -293,7 +293,7 @@
                                 {
                                     "id": "any",
                                     "key": "any",
-                                    "value": "qui",
+                                    "value": "repudiandae",
                                     "description": ""
                                 }
                             ]
@@ -433,7 +433,7 @@
                                 {
                                     "id": "name",
                                     "key": "name",
-                                    "value": "corporis",
+                                    "value": "laudantium",
                                     "description": ""
                                 }
                             ]
@@ -474,7 +474,7 @@
                                 {
                                     "id": "name",
                                     "key": "name",
-                                    "value": "asperiores",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -515,7 +515,7 @@
                                 {
                                     "id": "name",
                                     "key": "name",
-                                    "value": "quia",
+                                    "value": "ut",
                                     "description": ""
                                 }
                             ]
@@ -589,7 +589,7 @@
                                 {
                                     "id": "name",
                                     "key": "name",
-                                    "value": "impedit",
+                                    "value": "mollitia",
                                     "description": ""
                                 }
                             ]
@@ -750,1413 +750,6 @@
                     "response": []
                 },
                 {
-                    "name": "Order BREAD items.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/order",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/order"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/action",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/action",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/action"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/order",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/order",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/order"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/{id}\/restore",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/:id\/restore",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/:id\/restore",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "aspernatur",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Get BREAD relations data.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/relation",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/relation"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/remove",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/remove",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/remove"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/create",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/create",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/create"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "POST BRE(A)D - Store data.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "sint",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/{id}\/edit",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/:id\/edit",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/:id\/edit",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "officiis",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "tempore",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/users\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/users\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/users\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "corrupti",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Order BREAD items.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/order",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/order"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/action",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/action",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/action"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/order",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/order",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/order"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/{id}\/restore",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/:id\/restore",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/:id\/restore",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "in",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Get BREAD relations data.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/relation",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/relation"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/remove",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/remove",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/remove"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/create",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/create",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/create"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "POST BRE(A)D - Store data.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "quis",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/{id}\/edit",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/:id\/edit",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/:id\/edit",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "modi",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "voluptatibus",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/menus\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/menus\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/menus\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "provident",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Order BREAD items.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/order",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/order"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/action",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/action",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/action"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/order",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/order",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/order"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/{id}\/restore",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/:id\/restore",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/:id\/restore",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "tempora",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Get BREAD relations data.",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/relation",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/relation"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/remove",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/remove",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/remove"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/create",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/create",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/create"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "iure",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/{id}\/edit",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/:id\/edit",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/:id\/edit",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "facilis",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "molestiae",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "admin\/roles\/{id}",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "admin\/roles\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/admin\/roles\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "ipsa",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Api-Version",
-                                "value": "v1"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
                     "name": "admin\/menus\/{menu}\/builder",
                     "request": {
                         "url": {
@@ -2169,7 +762,7 @@
                                 {
                                     "id": "menu",
                                     "key": "menu",
-                                    "value": "beatae",
+                                    "value": "aliquid",
                                     "description": ""
                                 }
                             ]
@@ -2210,7 +803,7 @@
                                 {
                                     "id": "menu",
                                     "key": "menu",
-                                    "value": "quod",
+                                    "value": "nulla",
                                     "description": ""
                                 }
                             ]
@@ -2251,13 +844,13 @@
                                 {
                                     "id": "menu",
                                     "key": "menu",
-                                    "value": "ducimus",
+                                    "value": "eaque",
                                     "description": ""
                                 },
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "officiis",
+                                    "value": "cum",
                                     "description": ""
                                 }
                             ]
@@ -2298,7 +891,7 @@
                                 {
                                     "id": "menu",
                                     "key": "menu",
-                                    "value": "omnis",
+                                    "value": "ut",
                                     "description": ""
                                 }
                             ]
@@ -2339,7 +932,7 @@
                                 {
                                     "id": "menu",
                                     "key": "menu",
-                                    "value": "sed",
+                                    "value": "quaerat",
                                     "description": ""
                                 }
                             ]
@@ -2479,7 +1072,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "iste",
+                                    "value": "quibusdam",
                                     "description": ""
                                 }
                             ]
@@ -2520,7 +1113,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "qui",
+                                    "value": "non",
                                     "description": ""
                                 }
                             ]
@@ -2561,7 +1154,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "atque",
+                                    "value": "quam",
                                     "description": ""
                                 }
                             ]
@@ -2602,7 +1195,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "voluptatem",
+                                    "value": "eos",
                                     "description": ""
                                 }
                             ]
@@ -2940,7 +1533,7 @@
                                 {
                                     "id": "table",
                                     "key": "table",
-                                    "value": "optio",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -3014,7 +1607,7 @@
                                 {
                                     "id": "table",
                                     "key": "table",
-                                    "value": "temporibus",
+                                    "value": "amet",
                                     "description": ""
                                 }
                             ]
@@ -3055,7 +1648,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "eligendi",
+                                    "value": "omnis",
                                     "description": ""
                                 }
                             ]
@@ -3096,7 +1689,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quasi",
+                                    "value": "dolore",
                                     "description": ""
                                 }
                             ]
@@ -3170,7 +1763,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quia",
+                                    "value": "sint",
                                     "description": ""
                                 }
                             ]
@@ -3310,7 +1903,7 @@
                                 {
                                     "id": "database",
                                     "key": "database",
-                                    "value": "minima",
+                                    "value": "nemo",
                                     "description": ""
                                 }
                             ]
@@ -3351,7 +1944,7 @@
                                 {
                                     "id": "database",
                                     "key": "database",
-                                    "value": "nesciunt",
+                                    "value": "possimus",
                                     "description": ""
                                 }
                             ]
@@ -3392,7 +1985,7 @@
                                 {
                                     "id": "database",
                                     "key": "database",
-                                    "value": "fuga",
+                                    "value": "perferendis",
                                     "description": ""
                                 }
                             ]
@@ -3433,7 +2026,7 @@
                                 {
                                     "id": "database",
                                     "key": "database",
-                                    "value": "qui",
+                                    "value": "quidem",
                                     "description": ""
                                 }
                             ]
@@ -3573,7 +2166,7 @@
                                 {
                                     "id": "any",
                                     "key": "any",
-                                    "value": "debitis",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -3708,7 +2301,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "14",
+                                    "value": "9",
                                     "description": "The ID of the TvShow."
                                 }
                             ]
