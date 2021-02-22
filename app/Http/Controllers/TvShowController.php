@@ -7,6 +7,11 @@ use App\Repositories\TvShowRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 
+/**
+ * @group TvShows management
+ *
+ * APIs for managing TvShows
+ */
 class TvShowController extends Controller
 {
 
@@ -22,6 +27,8 @@ class TvShowController extends Controller
     /**
      * List all available TV Shows
      *
+     * @header X-Api-Version v1
+     * @queryParam lastId Field. Example: 10
      * @param Request $request
      * @return array|string
      */
@@ -33,6 +40,8 @@ class TvShowController extends Controller
     /**
      * Show a specific TV Show by ID
      *
+     * @header X-Api-Version v1
+     * @urlParam id integer required The ID of the TvShow.
      * @param $id
      * @return array|string
      */
@@ -47,6 +56,8 @@ class TvShowController extends Controller
     /**
      * Search for a TV Show
      *
+     * @header X-Api-Version v1
+     * @queryParam q Field. Example: deadwood
      * @param Request $request
      * @return mixed
      */
